@@ -1,0 +1,22 @@
+Apokalypsis
+Copyright 2026 Nathaniel Essex
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+"Apokalypsis" is a trademark of Nathaniel Essex. The license covers the code,
+not the name (Apache License 2.0, section 6).
+
+Influence and credit
+--------------------
+The learning method in Apokalypsis is enhanced by ideas from Eero Alvar's
+LearnHarness method, shown in his video of August 14, 2026. LearnHarness is
+licensed under the GNU AGPL. No LearnHarness code, text or file is copied into
+this repository. See CLEAN-ROOM.md for the rules that keep it that way.
+
+Prior art
+---------
+The map, teach and drill ideas build on the author's own earlier Claude Code
+skills (book-teacher, knowledge-mapper and drill-builder), which existed by
+March 2026, before the LearnHarness video.
+
+If you redistribute this work, keep this NOTICE file, as section 4(d) of the
+Apache License requires.

@@ -1,0 +1,19 @@
+{
+  "name": "apokalypsis",
+  "displayName": "Apokalypsis",
+  "version": "0.0.1",
+  "description": "A learning harness for Claude Code: see the whole subject under fog, find the edge of what you know, and prove progress with logged reps. From mystery to epiphany.",
+  "author": {
+    "name": "Nathaniel Essex"
+  },
+  "homepage": "https://github.com/naessex/apokalypsis",
+  "repository": "https://github.com/naessex/apokalypsis",
+  "license": "Apache-2.0",
+  "keywords": [
+    "learning",
+    "study",
+    "skill-tree",
+    "spaced-practice",
+    "knowledge-map"
+  ]
+}

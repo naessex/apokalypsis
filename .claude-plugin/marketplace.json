@@ -1,0 +1,17 @@
+{
+  "name": "apokalypsis",
+  "owner": {
+    "name": "Nathaniel Essex"
+  },
+  "metadata": {
+    "description": "Public marketplace for the Apokalypsis learning harness.",
+    "version": "0.0.1"
+  },
+  "plugins": [
+    {
+      "name": "apokalypsis",
+      "source": "./",
+      "description": "A learning harness for Claude Code: see the whole subject under fog, find the edge of what you know, and prove progress with logged reps."
+    }
+  ]
+}

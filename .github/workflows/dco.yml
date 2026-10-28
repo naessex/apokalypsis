@@ -1,0 +1,24 @@
+name: dco
+
+# Every commit in a pull request must carry a Signed-off-by line (ruling APK-L4).
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  dco:
+    name: DCO sign-off
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Check sign-off on every commit
+        run: python scripts/check_dco.py "origin/${{ github.base_ref }}" "${{ github.event.pull_request.head.sha }}"

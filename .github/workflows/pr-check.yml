@@ -1,0 +1,25 @@
+name: pr-check
+
+# Plugin gate for every pull request. Apokalypsis is a Claude Code plugin with
+# no build step, so the check is the plugin contract in scripts/validate_plugin.py.
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate plugin
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Plugin contract
+        run: python scripts/validate_plugin.py
